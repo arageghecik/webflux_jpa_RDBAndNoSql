@@ -12,4 +12,7 @@ it uses lomback lib\
 @Data - annotation equivalent methods equals(), hashcode(), toString(), getters and setters\
 @NoArgsConstructor, @AllArgsConstructor, equivalent constructor without argument and constructor with all arguments
 
+you have to install db(mongo,maria,postgres)
+for mongo I installed by official documentation and sudo systemctl start mongod
+and didn't set any login, pass, dbname, and @id annotation set by org.springframework.data.annotation.Id
 it has DataLoader class with method annotated @PostConstruct which can load data to DB
