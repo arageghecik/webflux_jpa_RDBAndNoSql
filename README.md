@@ -10,9 +10,13 @@ and @id imported from javax.persistence.Id instead of org.springframework.data.a
 
 it uses lomback lib\
 @Data - annotation equivalent methods equals(), hashcode(), toString(), getters and setters\
-@NoArgsConstructor, @AllArgsConstructor, equivalent constructor without argument and constructor with all arguments
+@NoArgsConstructor, @AllArgsConstructor, equivalent constructor without argument and constructor with all arguments\
 
-you have to install db(mongo,maria,postgres)
-for mongo I installed by official documentation and sudo systemctl start mongod
-and didn't set any login, pass, dbname, and @id annotation set by org.springframework.data.annotation.Id
-it has DataLoader class with method annotated @PostConstruct which can load data to DB
+
+you have to install db(mongo,maria,postgres)\
+for mongo I installed by official documentation and sudo systemctl start mongod\
+and didn't set any login, pass, dbname, for mongo and @id annotation set by org.springframework.data.annotation.Id
+
+it has DataLoader class with method annotated @PostConstruct which can load data to DB\
+alternative way to set properties spring.datasource.initialization-mode=always, spring.jpa.hibernate.ddl-auto=none\
+and to make schema-{platform}.sql or/and data-{platform}.sql and property spring.datasourse.platform(u can without platform)\
