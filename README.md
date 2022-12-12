@@ -1,3 +1,6 @@
+current:Nosql(mongoDB)
+tag:RelationDb checking to RelationDatabase variant
+
 app gets data from http://localhost:7634/aircraft(you need to run planefinder app)
 and save it in its db
 
