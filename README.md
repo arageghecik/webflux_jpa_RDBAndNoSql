@@ -1,7 +1,7 @@
 current:Nosql(mongoDB)
 tag:RelationDb checking to RelationDatabase variant
 
-app gets data from http://localhost:7634/aircraft(you need to run planefinder tag:without_cloud_strategy app or plainfinder_without_cloud_strategy)
+app gets data from http://localhost:7634/aircraft (you need to run planefinder tag:without_cloud_strategy app or plainfinder_without_cloud_strategy)
 and save it in its db
 
 In JPA compared with redis repository we added in Aircraft
