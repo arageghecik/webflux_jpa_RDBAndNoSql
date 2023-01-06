@@ -30,6 +30,7 @@ public class PlaneFinderPoller {
                 .toStream().forEach(aircraftRepository::save);
 
         // taking out data from JPA repo
+        System.out.println("---All Aircraft---");
         aircraftRepository.findAll().forEach(System.out::println);
     }
 
