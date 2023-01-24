@@ -20,6 +20,24 @@ it uses lomback lib\
 sudo systemctl status mongod\
 sudo systemctl start mongod
 
+for mongo you need to add this dependencies
+
+```xml
+ <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+ </dependency>
+ ```
+ 
+ and for test (if you dosen't have local mongo db) you can add embed mongo for tests
+ ```xml
+  <dependency>
+       <groupId>de.flapdoodle.embed</groupId>
+       <artifactId>de.flapdoodle.embed.mongo</artifactId>
+       <scope>test</scope>
+  </dependency>
+```
+
 you have to install db(mongo,maria,postgres)\
 for mongo I installed by official documentation and sudo systemctl start mongoDB\
 and didn't set any login, pass, dbname, for mongo and @id annotation set by org.springframework.data.annotation.Id
